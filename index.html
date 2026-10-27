@@ -27,9 +27,15 @@
 .story-media.comparison img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;aspect-ratio:3/4}
 .story-media.comparison figcaption{position:absolute;left:7px;bottom:7px;padding:5px 7px;background:#183c31df;border-radius:4px;color:#fff;font-size:10px;letter-spacing:.02em}
 @media(max-width:520px){.story-media.comparison figure{min-height:260px}.story-media.comparison img{height:100%;aspect-ratio:3/4}.story-media.comparison figcaption{font-size:9px;left:4px;bottom:4px;padding:4px 5px}}
+
+/* Official clinic wordmark, unchanged proportions across viewport sizes. */
+.brand{flex:0 1 auto;max-width:min(29vw,315px);min-width:0}
+.official-brand-logo{display:block;width:clamp(210px,24vw,300px);max-width:100%;height:auto;object-fit:contain}
+@media(max-width:750px){.brand{max-width:calc(100vw - 100px)}.official-brand-logo{width:clamp(195px,50vw,270px)}}
+@media(max-width:360px){.official-brand-logo{width:190px}}
 </style></head>
 <body><div id="progress"></div>
-<header><div class="wrap"><a class="brand" href="#home"><span class="logo">❧</span><span><strong>REGENERATION</strong><small>CLINIC OF PANAMA</small></span></a><button id="menu-toggle" class="menubtn" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#treatments">Treatments</a><a href="#stories">Patient Stories</a><a href="#team">Our Team</a><a href="#visit">Your Visit</a><a href="#contact">Contact</a></nav><a href="https://regeneratepanama.com/" class="navbtn" target="_blank" rel="noopener">Book a Consultation</a></div></header>
+<header><div class="wrap"><a class="brand" href="#home" aria-label="Regeneration Clinic of Panama — Home"><img class="official-brand-logo" src="assets/regeneration-clinic-official-logo.png" alt="Regeneration Clinic" width="983" height="211" decoding="async"></a><button id="menu-toggle" class="menubtn" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#treatments">Treatments</a><a href="#stories">Patient Stories</a><a href="#team">Our Team</a><a href="#visit">Your Visit</a><a href="#contact">Contact</a></nav><a href="https://regeneratepanama.com/" class="navbtn" target="_blank" rel="noopener">Book a Consultation</a></div></header>
 <main>
 <section class="hero" id="home"><picture class="hero-photo"><source media="(max-width:750px)" srcset="assets/panama-city-waterfront-1200.jpg"><img src="assets/panama-city-waterfront-2400.jpg" width="2400" height="1600" fetchpriority="high" alt="Real waterfront photograph of Panama City"></picture><div class="wrap"><div class="hero-text reveal"><div class="kicker">ADVANCED REGENERATIVE MEDICINE</div><h1>Real Medicine.<br>Real Possibilities.<br>In Panama.</h1><p>Explore personalized regenerative medicine with a Panama-based team and international patient support.</p><div class="hero-actions"><a class="button" href="https://regeneratepanama.com/" target="_blank" rel="noopener">Book a Consultation</a><a class="button alt" href="#stories">Learn More</a></div><div class="hero-notes"><span>Personalized assessment</span><span>In-house laboratory (clinic reported)</span><span>Panama-based care</span></div></div></div></section>
 <div class="transition" aria-hidden="true"></div>

@@ -1,0 +1,1 @@
+Official header logo sourced from https://regeneratepanama.com/wp-content/uploads/2026/08/cropped-cropped-LOGO-3.png (983×211 transparent PNG). Used as an exact asset in this unofficial clinic redesign concept; permission for final publication should be confirmed with the company.
