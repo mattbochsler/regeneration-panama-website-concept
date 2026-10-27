@@ -116,6 +116,37 @@ header{background:rgba(247,250,253,.94);border-color:#D6E1EC}
 .hero::after{height:clamp(120px,25vh,195px);background:linear-gradient(180deg,rgba(242,247,252,0),rgba(242,247,252,.48) 53%,#F2F7FC 100%)}
 .transition{height:clamp(55px,11vw,72px)}
 }
+
+/* Photo-forward treatment panel overlay: brighten imagery while protecting contrast. */
+.treatments{
+ background:
+  linear-gradient(90deg,
+   rgba(37,63,96,.91) 0%,
+   rgba(54,85,127,.78) 37%,
+   rgba(54,85,127,.59) 72%,
+   rgba(54,85,127,.53) 100%),
+  url('assets/concept-66e1aebe6362.webp') center/cover;
+ color:#FFFFFF;
+}
+.treatments h2,.treatments p{color:#FFFFFF}
+.treatments .treat-grid a{
+ background:rgba(37,63,96,.57);
+ border-color:rgba(234,242,250,.58);
+ box-shadow:0 4px 22px rgba(20,38,62,.15);
+}
+.treatments .treat-grid a:hover{background:rgba(37,63,96,.77)}
+.treatments .button.alt{background:rgba(247,250,253,.94);color:#253F60}
+@media(max-width:750px){
+ .treatments{
+  background:
+   linear-gradient(180deg,
+    rgba(37,63,96,.88) 0%,
+    rgba(54,85,127,.72) 44%,
+    rgba(54,85,127,.59) 100%),
+   url('assets/concept-66e1aebe6362.webp') center/cover;
+ }
+ .treatments .treat-grid a{background:rgba(37,63,96,.70)}
+}
 </style></head>
 <body><div id="progress"></div>
 <header><div class="wrap"><a class="brand" href="#home" aria-label="Regeneration Clinic of Panama — Home"><img class="official-brand-logo" src="assets/regeneration-clinic-blue-logo.png" alt="Regeneration Clinic of Panama" width="479" height="171" decoding="async"></a><button id="menu-toggle" class="menubtn" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#treatments">Treatments</a><a href="#stories">Patient Stories</a><a href="#team">Our Team</a><a href="#visit">Your Visit</a><a href="#contact">Contact</a></nav><a href="https://regeneratepanama.com/" class="navbtn" target="_blank" rel="noopener">Book a Consultation</a></div></header>
