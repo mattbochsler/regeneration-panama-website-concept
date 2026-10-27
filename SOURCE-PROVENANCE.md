@@ -1,0 +1,3 @@
+Baseline from: regeneration_panama_authentic_photos_proposal_mobile_gradients.html
+SHA-256: 89d6ca71efc348e417a16a5032ffa6afbcc2a5f5cd99a289eda4456e9e5c8e29
+Image assets extracted from embedded WebP data URIs without modification.
