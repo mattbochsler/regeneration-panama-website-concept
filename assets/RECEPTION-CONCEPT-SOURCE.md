@@ -1,0 +1,1 @@
+Top homepage hero shows a generated, illustrative reception scene based on publicly shared clinic interior visual references. It is not an authentic photograph of the premises, personnel, or patients. Sourced from owner-downloaded generated image Modern Regeneration Clinic Lobby.png. Lower Your Journey section continues to use the authentic Google Maps clinic hallway photo.
