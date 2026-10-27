@@ -105,6 +105,17 @@ header{background:rgba(247,250,253,.94);border-color:#D6E1EC}
  .hero-notes{gap:10px}
 }
 @media(max-width:390px){.hero-text h1{font-size:clamp(36px,9.85vw,40px)}}
+
+/* Continuous photo-to-page transition (desktop and mobile). */
+.hero{isolation:isolate}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:clamp(105px,15vw,205px);pointer-events:none;z-index:0;background:linear-gradient(180deg,rgba(242,247,252,0) 0%,rgba(242,247,252,.24) 30%,rgba(242,247,252,.68) 69%,#F2F7FC 100%)}
+.hero>.wrap{position:relative;z-index:1}
+.transition{height:clamp(72px,10.2vw,149px);margin-top:-30px;background:linear-gradient(180deg,#F2F7FC,#F2F7FC);clip-path:none}
+.stories{background:linear-gradient(180deg,#F2F7FC,#EDF3FA 55%,#E1EAF5)}
+@media(max-width:750px){
+.hero::after{height:clamp(120px,25vh,195px);background:linear-gradient(180deg,rgba(242,247,252,0),rgba(242,247,252,.48) 53%,#F2F7FC 100%)}
+.transition{height:clamp(55px,11vw,72px)}
+}
 </style></head>
 <body><div id="progress"></div>
 <header><div class="wrap"><a class="brand" href="#home" aria-label="Regeneration Clinic of Panama — Home"><img class="official-brand-logo" src="assets/regeneration-clinic-blue-logo.png" alt="Regeneration Clinic of Panama" width="479" height="171" decoding="async"></a><button id="menu-toggle" class="menubtn" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#treatments">Treatments</a><a href="#stories">Patient Stories</a><a href="#team">Our Team</a><a href="#visit">Your Visit</a><a href="#contact">Contact</a></nav><a href="https://regeneratepanama.com/" class="navbtn" target="_blank" rel="noopener">Book a Consultation</a></div></header>
