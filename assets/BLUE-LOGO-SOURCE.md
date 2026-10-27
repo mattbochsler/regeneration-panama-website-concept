@@ -1,0 +1,1 @@
+User-provided screenshot of a Regeneration Clinic of Panama blue wordmark; exact artwork cropped from local screenshot on October 26, 2026. Cropped to 479 x 171 pixels; not reconstructed or replaced with another mark. Source image stored on the owner computer; this file is the website-ready crop.
