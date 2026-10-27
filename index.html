@@ -5,7 +5,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#faf9f5;--ink:#122d29;--gold:#a9874c;--sage:#dfe8e0;--dark:#183c31;--space:clamp(85px,10vw,152px)}
+:root{--cream:#F7FAFD;--ink:#253F60;--gold:#5C799A;--sage:#E4ECF5;--dark:#36557F;--space:clamp(85px,10vw,152px)}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font:15px/1.6 "DM Sans",sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}button{font:inherit}img{display:block;max-width:100%}.wrap{width:min(1370px,91%);margin:auto}h1,h2,h3{font-family:"Cormorant Garamond",serif;line-height:1.03;font-weight:500;margin:0}h1{font-size:clamp(57px,6.3vw,96px);letter-spacing:-.035em}h2{font-size:clamp(44px,4.5vw,70px)}h3{font-size:clamp(29px,2.6vw,41px)}p{margin:16px 0;line-height:1.65}.kicker{text-transform:uppercase;letter-spacing:.28em;font-size:11px;font-weight:600;color:#927950}.button{display:inline-flex;gap:13px;align-items:center;justify-content:center;padding:14px 26px;border-radius:999px;background:#234c3e;color:white;font-size:12px;border:1px solid #234c3e;transition:transform .25s,background .25s;white-space:nowrap}.button:hover{transform:translateY(-3px);background:#326a54}.button.alt{background:#ffffff9e;color:var(--ink);border-color:#68796e}
 #progress{height:3px;position:fixed;top:0;left:0;background:#ad8d51;width:0;z-index:300}header{position:sticky;top:0;z-index:200;background:#fcfbf9e8;backdrop-filter:blur(16px);border-bottom:1px solid #e7e9e4;height:76px;display:flex;align-items:center}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:14px;min-width:0}.logo{font:52px/1 "Cormorant Garamond",serif;color:#839171}.brand strong{display:block;font:500 clamp(23px,2.1vw,34px)/.95 "Cormorant Garamond",serif;letter-spacing:.16em}.brand small{display:block;letter-spacing:.28em;font-size:9px;margin-top:4px;text-align:center}.navlinks{display:flex;gap:clamp(13px,2vw,30px);align-items:center;font-size:12px}.navlinks a:hover{color:var(--gold)}.navbtn{background:#264b3d;color:#fff;padding:11px 20px;border-radius:30px;font-size:12px}.menubtn{display:none;border:0;background:none;font-size:26px}
 .hero{position:relative;min-height:clamp(620px,77svh,850px);display:flex;align-items:center;isolation:isolate;overflow:hidden}.hero-photo{position:absolute;inset:0;z-index:-2}.hero-photo img{height:100%;width:100%;object-fit:cover;object-position:center 54%;transform:scale(1.035) translateY(var(--drift,0px))}.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#fbfaf7fa 0%,#fbfaf7e3 28%,#fbfaf7a6 45%,#fbfaf73d 62%,transparent 85%)}.hero-text{max-width:660px;padding:72px 0 95px}.hero-text h1{margin:18px 0 20px}.hero-text p{font-size:clamp(16px,1.45vw,21px);max-width:520px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:29px}.hero-notes{display:flex;gap:27px;margin-top:36px;flex-wrap:wrap;font-size:12px;color:#405a4f}.hero-notes span{border-left:1px solid #8b9d89;padding-left:13px}
@@ -53,6 +53,58 @@ header{height:clamp(80px,7vw,94px)}
 .hero-photo img{object-position:54% center;transform:none!important}
 .hero:before{background:linear-gradient(180deg,rgba(251,250,247,.98) 0%,rgba(251,250,247,.92) 31%,rgba(251,250,247,.62) 62%,rgba(251,250,247,.18) 100%)}
 }
+
+/* Brand system: three owner-selected blues and their neutral tints */
+:root{--blue-deep:#36557F;--blue-mid:#5C799A;--blue-light:#8096B0}
+body{background:#F2F7FC;color:#253F60}
+h1,h2,h3{color:#253F60}.kicker{color:#36557F}
+#progress{background:linear-gradient(90deg,#8096B0,#5C799A,#36557F)}
+header{background:rgba(247,250,253,.94);border-color:#D6E1EC}
+.navlinks{color:#253F60}.navlinks a:hover{color:#5C799A}
+.button,.navbtn{background:#36557F;border-color:#36557F;color:white}
+.button:hover,.navbtn:hover{background:#5C799A;border-color:#5C799A;color:white}
+.button.alt{background:rgba(247,250,253,.91);color:#253F60;border-color:#5C799A}
+.button.alt:hover{background:#E4ECF5;color:#253F60;border-color:#36557F}
+.hero{background:#E4ECF5}
+.hero:before{background:linear-gradient(90deg,rgba(247,250,253,.98),rgba(242,247,252,.93) 28%,rgba(228,236,245,.79) 47%,rgba(228,236,245,.16) 76%,transparent)}
+.hero-notes{color:#36557F}.hero-notes span{border-left-color:#8096B0}
+.transition{background:linear-gradient(180deg,rgba(242,247,252,0),#F2F7FC 76%,#F2F7FC)}
+.stories{background:linear-gradient(180deg,#F2F7FC,#EDF3FA 55%,#E1EAF5)}
+.section-heading p,.story-copy p,.team-copy p{color:#415C7C}
+.story{background:rgba(255,255,255,.93);border:1px solid #D6E1EC;box-shadow:0 20px 44px rgba(54,85,127,.09)}
+.story-copy a{color:#36557F}
+.story-media.comparison figure{background:#E4ECF5}
+.story-media.comparison figcaption,.story-media .tags span{background:rgba(54,85,127,.95);color:white}
+.notice{color:#415C7C!important}
+.fade-bridge{background:linear-gradient(180deg,#E1EAF5,#ECF3FA 42%,#D5E2F0)}
+.fade-bridge:after{background:radial-gradient(80% 100% at 45% 55%,rgba(255,255,255,.6),transparent 70%)}
+.treatments{background:linear-gradient(140deg,rgba(54,85,127,.98),rgba(37,63,96,.96)),url('assets/concept-66e1aebe6362.webp') center/cover;color:white}
+.treatments h2,.treatments p{color:white}.treatments .kicker{color:#E4ECF5}
+.treat-grid a{border-color:rgba(228,236,245,.5);background:rgba(255,255,255,.05)}
+.treat-grid a:hover{background:rgba(128,150,176,.3)}.treat-grid .symbol{color:#E4ECF5}
+.team{background:linear-gradient(180deg,#E1EAF5,#F7FAFD 49%,#E7EEF7)}
+.team-grid{background:#F7FAFD;box-shadow:0 15px 50px rgba(54,85,127,.12)}
+.coast,.clinic-journey{background:#E1EAF5}
+.coast:before,.clinic-journey:before{background:linear-gradient(90deg,rgba(247,250,253,.98),rgba(242,247,252,.91) 30%,rgba(228,236,245,.26) 70%,transparent)}
+.footer{background:#36557F;color:white}.footer h3,.footer .kicker{color:white!important}
+.footer p{color:#E4ECF5}.footer a{color:white}
+.menubtn{color:#36557F}
+@media(max-width:750px){
+.navlinks{background:#F7FAFD}
+.hero:before{background:linear-gradient(180deg,rgba(247,250,253,.98),rgba(242,247,252,.94) 31%,rgba(228,236,245,.73) 64%,rgba(228,236,245,.18))}
+.coast:before,.clinic-journey:before{background:linear-gradient(180deg,rgba(247,250,253,.98),rgba(242,247,252,.92) 43%,rgba(228,236,245,.22))}
+}
+
+/* Small-screen legibility and overflow protection */
+@media(max-width:750px){
+ .hero .wrap{min-width:0;width:91%}
+ .hero-text{width:100%;max-width:100%;min-width:0}
+ .hero-text h1{font-size:clamp(38px,10.25vw,51px);line-height:1.06;letter-spacing:-.04em;overflow-wrap:normal}
+ .hero-text p{font-size:clamp(15px,4vw,17px);max-width:100%;overflow-wrap:break-word}
+ .hero-actions{gap:10px}
+ .hero-notes{gap:10px}
+}
+@media(max-width:390px){.hero-text h1{font-size:clamp(36px,9.85vw,40px)}}
 </style></head>
 <body><div id="progress"></div>
 <header><div class="wrap"><a class="brand" href="#home" aria-label="Regeneration Clinic of Panama — Home"><img class="official-brand-logo" src="assets/regeneration-clinic-blue-logo.png" alt="Regeneration Clinic of Panama" width="479" height="171" decoding="async"></a><button id="menu-toggle" class="menubtn" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#treatments">Treatments</a><a href="#stories">Patient Stories</a><a href="#team">Our Team</a><a href="#visit">Your Visit</a><a href="#contact">Contact</a></nav><a href="https://regeneratepanama.com/" class="navbtn" target="_blank" rel="noopener">Book a Consultation</a></div></header>
