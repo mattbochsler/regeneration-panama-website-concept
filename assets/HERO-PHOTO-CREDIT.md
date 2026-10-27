@@ -1,0 +1,1 @@
+Panama City waterfront photographed by Luis Quintero.\nSource: https://www.pexels.com/photo/view-on-panama-city-2666249/\nPexels free-to-use photo; downloaded at 2400px and 1200px widths.\nBoth versions are the same continuous photograph (not a composite).\n
